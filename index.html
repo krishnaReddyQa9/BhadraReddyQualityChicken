@@ -1,66 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bhadra Reddy Quality Chicken</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <div class="header-container">
-            <img src="images/logo-left.jpg" alt="Logo Left" class="header-image">
-            <h1>Bhadra Reddy Quality Chicken</h1>
-            <img src="images/logo-right.jpg" alt="Logo Right" class="header-image">
-        </div>
-        <p>Main Road Chillakallu</p>
-        <div class="language-switcher">
-            <button onclick="changeLanguage('en')">English</button>
-            <button onclick="changeLanguage('te')">తెలుగు</button>
-        </div>
-    </header>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="spinner-container">
+      <div class="circles">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
 
-    <nav>
-        <ul>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <div class="container">
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+        <span>Close</span>
+      </div>
+      <header class="header" id="home">
+        <div class="img-wrapper">
+          <img src="images/bg.jpg" />
+        </div>
+        <div class="banner">
+          <h1>Bhadra Reddy Quality Chicken</h1>
+          <p>We are excited to provide our customers with fresh, high-quality chicken.</p>
+          <button>Discover Now</button>
+        </div>
+      </header>
+
+      <section class="sidebar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#home" class="menu-link" data-content="Home">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#about-us" class="menu-link" data-content="About Us"
+              >About Us</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#team" class="menu-link" data-content="Team">Team</a>
+          </li>
+          <li class="menu-item">
+            <a href="#pricing" class="menu-link" data-content="Pricing"
+              >Pricing</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#contact" class="menu-link" data-content="Contact"
+              >Contact</a
+            >
+          </li>
         </ul>
-    </nav>
-
-    <section id="products">
-        <h2 data-en="Our Products" data-te="మా ఉత్పత్తులు">Our Products</h2>
-        <div class="product-gallery">
-            <img src="images/fresh-chicken.jpg" alt="Fresh Chicken">
-            <img src="images/fresh-chicken1.jpg" alt="Fresh Chicken1">
-            <img src="images/fresh-chicken2.jpg" alt="Fresh Chicken2">
-            <img src="images/chicken-breed1.jpg" alt="Chicken Breed 1">
-            <img src="images/chicken-breed2.jpg" alt="Chicken Breed 2">
-            <img src="images/chicken-breed3.jpg" alt="Chicken Breed 3">
-            <img src="images/Eggs3.jpg" alt="Eggs">
+        <div class="social-media">
+          <a href="https://github.com/KaranChandekar" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/karan-chandekar-a87263219/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://twitter.com/karanchandekar1" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
         </div>
-    </section>
+      </section>
 
-    <section id="about">
-        <h2 data-en="About Us" data-te="మా గురించి">About Us</h2>
-        <p data-en="With over 12 years of experience in delivering top-quality, fresh chicken, we are dedicated to ensuring customer satisfaction for every occasion..."
-           data-te="12 సంవత్సరాల పైగా అనుభవంతో, అత్యున్నత నాణ్యత గల తాజా చికెన్ అందించడంలో మా దృష్టి ప్రతి సందర్భంలో వినియోగదారుల సంతృప్తిని అందించడంపైనే ఉంది...">
-           With over 12 years of experience in delivering top-quality, fresh chicken, we are dedicated to ensuring customer satisfaction for every occasion...
-        </p>
-    </section>
+      <section class="about-us" id="about-us">
+        <div class="section-header">
+          <h1 class="section-heading">About Us</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="services">
+          <div class="service">
+            <div class="service-header">
+              
+            </div>
+            <p class="service-text">
+                "With over 12 years of experience in delivering top-quality, fresh chicken, we are dedicated to ensuring customer satisfaction for every occasion. Our commitment to sourcing the finest ingredients and adhering to strict quality standards guarantees that each product meets our customers' expectations. Whether you're planning a special event, a family gathering, or simply looking to enjoy a delicious meal at home, we strive to provide exceptional service and premium poultry that enhances your culinary experience."
+            </p>
+          </div>
+          <div class="service">
+            <div class="service-header">
+             
+          </div>
+          <div class="service">
+            <div class="service-header">
+             
+          </div>
+          <div class="service">
+            <div class="service-header">
+            
+          </div>
+          <div class="service">
+            <div class="service-header">
+             
+             
+          </div>
+          <div class="service">
+            <div class="service-header">
+              
+          </div>
+          <div class="about-us-img-wrapper">
 
-    <section id="contact">
-        <h2 data-en="Contact Us" data-te="మమ్మల్ని సంప్రదించండి">Contact Us</h2>
-        <p><strong>Raghava Reddy:</strong> 7416616572</p>
-        <p><strong>Bhadra Reddy:</strong> 93479 75568</p>
-        <p><strong>Email:</strong> Raghava2any1@gmail.com</p>
-    </section>
+            <img src="images/house.png" alt="Chicken Breed 2">
+                <img src="images/th.jpg" alt="Chicken Breed 3">
+           
+            
+          </div>
+        </div>
+      </section>
 
-    <footer>
-        <p>Find us on <a href="https://g.co/kgs/a6Zc6Rg">Google Maps</a></p>
-        <p>Contact: 7416616572</p>
-    </footer>
+      <section class="team" id="team">
+        <div class="section-header">
+          <h1 class="section-heading">Our Team</h1>
+          <div class="underline"></div>
+        </div>
+        <div class="cards-wrapper">
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="images/person-1.jpg" alt="CEO" />
+            </div>
+            <div class="card-info">
+              <h2>Bhadra Reddy</h2>
+              <h3>Owner</h3>
+              <p>
+                "Reddy is a nice and cool genius who works hard to provide high-quality service to customers for their complete satisfaction."
+              </p>
+             
+            </div>
+          </div>
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="images/person-2.jpg" alt="Designer" />
+            </div>
+            <div class="card-info">
+              <h2>Raghava Reddy</h2>
+              <h3>owner </h3>
+              <p>
+                "Raghava Reddy has completed his graduation and is successfully working with his team to help deliver services efficiently. He is a genius who works hard to provide high-quality service to customers for their complete satisfaction."
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+          <div class="card" data-tilt>
+            <div class="card-img-wrapper">
+              <img src="images/person-3.jpg" alt="Architect" />
+            </div>
+            <div class="card-info">
+              <h2>Our Customer's Feedbacks </h2>
+              <h3>Excellent products with outstanding quality and attention to detail. Highly satisfied with the results</h3>
+              <p>
+                "This is an amazing product, consistently maintained with high quality. They provide top-grade, fresh chicken that stands out for its taste and quality. Highly recommended!"
+              </p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact us" id="contact us">
+        <div class="contact-wrapper">
+          <div class="contact-left"></div>
+          <div class="contact-right">
+            <h1 class="contact-heading">Contact Us</h1>
+
+            <h2 data-en="Contact Us" data-te="మమ్మల్ని సంప్రదించండి">Contact Us
+            <p><strong>Raghava Reddy:</strong> <a href="tel:+7416616572">7416616572</a></p>
+            <p><strong>Bhadra Reddy:</strong> <a href="tel:+9347975568">93479 75568</a></p>
+            <p><strong>Email:</strong> <a href="mailto:Raghava2any1@gmail.com">Raghava2any1@gmail.com</a></p>
+            <p>Find us on <a href="https://g.co/kgs/a6Zc6Rg">Google Maps</a></p>
+          
+
+            
+
+        </h2>
+            
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+
+
+        <div class="footer-content">
+          <p class="copyright">
+            Copyright &copy; 2022, krishnareddyDeveloper - All Rights Reserved
+          </p>
+        
+            ></a>
+          </div>
+        </div>
+      </footer>
+
+      <a href="#" class="scroll-btn">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+    
+
+    </div>
+
+  
 
     <script src="script.js"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="tilt.js"></script>
+  </body>
 </html>
