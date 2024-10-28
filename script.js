@@ -62,7 +62,7 @@ window.onload = () => {
             contactHeading: "సంప్రదించండి",
             contactRaghava: "Raghava Reddy: 7416616572",
             contactBhadra: "Bhadra Reddy:9347975568 ",
-            contactEmail: "Email us at: contact@example.com",
+            contactEmail: "mailto:Raghava2any1@gmail.com",
             googleMaps: "గూగుల్ మ్యాప్స్ లో మమ్మల్ని కనుగొనండి https://g.co/kgs/a6Zc6Rg",
             copyright: "కాపీరైట్ © 2024Oct, కృష్ణరెడ్డి డెవలపర్ - అన్ని హక్కులు రిజర్వ్."
         },
