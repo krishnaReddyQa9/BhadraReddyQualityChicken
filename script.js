@@ -106,7 +106,7 @@ function orderNow() {
     alert("Welcome to Bhadra Reddy Quality Chicken's!");
 
     // Redirect to WhatsApp chat with the admin’s phone number and pre-filled message
-    let adminPhoneNumber = "917416616572"; // Replace with the admin's phone number
+    let adminPhoneNumber = "7416616572"; // Replace with the admin's phone number
     let message = "New order placed by a customer!";
     window.open(`https://wa.me/${adminPhoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
 }
