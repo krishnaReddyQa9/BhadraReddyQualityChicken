@@ -8,7 +8,11 @@
 </head>
 <body>
     <header>
-        <h1>Bhadra Reddy Quality Chicken</h1>
+        <div class="header-container">
+            <img src="images/logo-left.jpg" alt="Logo Left" class="header-image">
+            <h1>Bhadra Reddy Quality Chicken</h1>
+            <img src="images/logo-right.jpg" alt="Logo Right" class="header-image">
+        </div>
         <p>Main Road Chillakally</p>
         <div class="language-switcher">
             <button onclick="changeLanguage('en')">English</button>
@@ -36,13 +40,15 @@
 
     <section id="about">
         <h2 data-en="About Us" data-te="మా గురించి">About Us</h2>
-        <p data-en="We have been providing quality and fresh chicken for over 12 years." data-te="మేము 12 సంవత్సరాల పాటు నాణ్యమైన మరియు తాజా చికెన్ అందిస్తున్నాము."></p>
+        <p data-en="12 years of experience with customer satisfaction, providing quality and fresh chicken for events, parties, and weddings."
+           data-te="కస్టమర్ సంతృప్తితో 12 సంవత్సరాల అనుభవం, ఇవెంట్లు, పార్టీల కోసం నాణ్యమైన మరియు తాజా చికెన్ అందించడం."></p>
     </section>
 
     <section id="contact">
         <h2 data-en="Contact Us" data-te="మమ్మల్ని సంప్రదించండి">Contact Us</h2>
         <p><strong>Bhadra Reddy:</strong> 99667767676</p>
         <p><strong>Ragavareddy:</strong> 776767367637</p>
+        <p><strong>Email:</strong> Raghava@gmail.com</p>
     </section>
 
     <footer>
@@ -50,6 +56,12 @@
         <p>Contact: 746616000</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function changeLanguage(lang) {
+            document.querySelectorAll('[data-en]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${lang}`);
+            });
+        }
+    </script>
 </body>
 </html>
